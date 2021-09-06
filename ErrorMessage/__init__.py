@@ -11,7 +11,7 @@ class ErrorMessage(commands.Cog):
   
   @commands.Cog.listener()
   async def on_command_error(self, ctx, error):
-    await ctx.send(await self.config.message().replace("{error}", str(error)))
+    await ctx.send(str(await self.config.message()).replace("{error}", str(error)))
 
 def setup(bot : commands.Bot):
   bot.add_cog(ErrorMessage(bot=bot))
