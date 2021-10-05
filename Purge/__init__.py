@@ -1,4 +1,4 @@
-import redbot.core.commands.*
+from redbot.core.commands import *
 
 class Purge(Cog):
   @command()
