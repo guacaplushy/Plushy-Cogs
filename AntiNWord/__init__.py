@@ -1,5 +1,5 @@
 from redbot.core.commands import *
-from nword import filter
+from .nword import filter
 
 class AntiNWord(Cog):
   @Cog.listener()
