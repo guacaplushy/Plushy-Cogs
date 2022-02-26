@@ -4,7 +4,7 @@ from .nword import filter
 class AntiNWord(Cog):
   @Cog.listener()
   async def on_message(self, message):
-      d = filter(message)
+      d = filter(message.content)
       if d:
           message.member.ban()
           message.delete()
