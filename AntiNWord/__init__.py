@@ -6,7 +6,7 @@ class AntiNWord(Cog):
   async def on_message(self, message):
       d = filter(message.content)
       if d:
-          message.member.ban()
+          message.author.ban()
           message.delete()
       
     
