@@ -6,7 +6,7 @@ class AntiNWord(Cog):
   async def on_message(self, message):
       d = filter(message.content)
       if d:
-          message.author.ban()
+          message.author.ban(reason="racist D:")
           message.delete()
       
     
